@@ -38,7 +38,6 @@ def test_sub(calculator):
 def test_mul(calculator):
     assert calculator.multiplication(2, 1) == 2
     assert calculator.multiplication(2, 10) == 20
-    assert calculator.multiplication(4, -5) == 20
+    assert calculator.multiplication(4, -5) == -20
     assert calculator.multiplication(-5, -5) == 25
     assert calculator.multiplication(5, 0) == 0
-    
