@@ -27,3 +27,18 @@ def test_div(calculator):
 def test_div_by_zero(calculator):
     with pytest.raises(ValueError):
         calculator.div(10, 0)
+
+
+def test_sub(calculator):
+    assert calculator.substraction(1, 2) == -1
+    assert calculator.substraction(3, -1) == 4
+    assert calculator.substraction(100, 10) == 90
+
+
+def test_mul(calculator):
+    assert calculator.multiplication(2, 1) == 2
+    assert calculator.multiplication(2, 10) == 20
+    assert calculator.multiplication(4, -5) == 20
+    assert calculator.multiplication(-5, -5) == 25
+    assert calculator.multiplication(5, 0) == 0
+    
