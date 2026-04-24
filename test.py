@@ -1,10 +1,12 @@
 import pytest
 from app import Calculator
 
+
 # Fixture to create an instance of the Calculator class
 @pytest.fixture
 def calculator():
     return Calculator()
+
 
 # Test case for the add method
 def test_add(calculator):
@@ -19,6 +21,7 @@ def test_div(calculator):
     assert calculator.div(4, 2) == 2
     assert calculator.div(-1, 1) == -1
     assert calculator.div(0, 5) == 0
+
 
 # Test case for division by zero
 def test_div_by_zero(calculator):
